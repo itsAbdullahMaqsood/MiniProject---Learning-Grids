@@ -16,9 +16,9 @@
 }
 
 body{
-    height: 115vh;
+    height: 170vh;
     display: grid;
-    justify-content: center ;
+    justify-items: center;
     background-color: rgba(233, 233, 233, 0.808);
     background-image: url(background.jpg);
     background-blend-mode: lighten;
@@ -32,12 +32,9 @@ body{
     text-align: center;
     margin: 1rem;
 }
-
 .container{
     display: grid;
-    position: fixed;
-    top: 20px; 
-    left: 270px;
+    margin: 1.5rem 0;
     width: max(70vw, 1100px );
     height: max(75vh, 604px);
     grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -49,6 +46,42 @@ body{
     ;
     gap: 20px;
     font-family: 'Sarabun', sans-serif;
+}
+
+@media screen and (min-width:768px){
+    
+    body{
+        height: 170vh;
+    }
+
+    .subject{
+        font-size: 1.2rem;
+    }
+    
+    .description{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (min-width:1600px){
+    
+    body{
+        height: 115vh;
+    }
+
+    .container{
+        position: fixed;
+    }
+
+    .subject{
+        font-size: 1.2rem;
+    }
+    
+    .description{
+        font-size: 0.9rem;
+    }
+
 }
 
 .box-radius{
@@ -135,19 +168,16 @@ body{
     color: var(--dim-font);
     display: inline-block;
     clear: both;
-    padding: 3px 0 0;
     font-style: italic;
 }
 
 .subject{
     clear: both;
-    font-size: 1.2rem;
     font-weight: 550;
     padding: 0 25px;
 }
 
 .description{
-    font-size: 0.9rem;
     color: var(--dim-font);
     padding: 0 25px; 
     margin: 20px 0;
