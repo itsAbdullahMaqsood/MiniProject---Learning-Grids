@@ -1,0 +1,162 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --dim-font: rgba(255, 255, 255, 0.685);
+    --dark-dim-font:  rgba(63, 63, 63, 0.733);
+    --white-font: rgb(254, 244, 255) ; 
+    --black-font: black;
+}
+
+body{
+    height: 115vh;
+    display: grid;
+    justify-content: center ;
+    background-color: rgba(233, 233, 233, 0.808);
+    background-image: url(background.jpg);
+    background-blend-mode: lighten;
+    background-size:cover ;
+}
+
+.heading-box{
+    font-family: 'Dancing Script', cursive;
+    grid-area: heading-box;
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container{
+    display: grid;
+    position: fixed;
+    top: 20px; 
+    left: 270px;
+    width: max(70vw, 1100px );
+    height: max(75vh, 604px);
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "heading-box heading-box heading-box heading-box "
+        "box1 box1 box2 box3"
+        "box4 box5 box5 box3"
+    ;
+    gap: 20px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.box-radius{
+    border-radius: 1rem;
+}
+
+.box1{
+    grid-area: box1;
+    color: var(--white-font);
+    background: url(open-quote.png) no-repeat;
+    background-blend-mode:screen;
+    background-size: 150px;
+    background-color: rgb(120, 70, 179);
+    background-position: right top;
+}
+
+.box1:hover{
+    box-shadow: 3px 5px 15px -1px rgb(31, 0, 66); /* x, y, blur, spread */
+}
+
+.box2{
+    grid-area: box2;
+    color: var(--white-font);
+    background-color: rgb(92, 89, 134);
+}
+
+.box2:hover{
+    box-shadow: 3px 5px 15px -1px rgb(4, 0, 58);; /* x, y, blur, spread */
+}
+
+.box3{
+    grid-area: box3;
+    background-color: rgb(255, 255, 255);
+    .job, .description{
+        color: var(--dark-dim-font);
+    }
+}
+
+.box3:hover, .box4:hover{
+    box-shadow: 3px 5px 15px -1px #a3a3a3; /* x, y, blur, spread */
+}
+
+
+.box4{
+    grid-area: box4;
+    background-color: rgb(255, 255, 255);
+    .job, .description{
+        color: var(--dark-dim-font);
+    }
+}
+
+.box5{
+    grid-area: box5;
+    color: var(--white-font);
+    background-color: rgb(32, 30, 58);
+}
+
+.box5:hover{
+    box-shadow: 3px 5px 15px -1px #000; /* x, y, blur, spread */
+}
+
+
+.profile-pic{
+    float: left;
+    margin: 20px;
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 50%;
+}
+
+.credentials{
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 160px;
+}
+
+.name{
+    font-size: 1rem;
+    display: inline-block;
+    clear: both;
+    padding: 22px 0 0;
+}
+
+.job{
+    color: var(--dim-font);
+    display: inline-block;
+    clear: both;
+    padding: 3px 0 0;
+    font-style: italic;
+}
+
+.subject{
+    clear: both;
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: 0 25px;
+}
+
+.description{
+    font-size: 0.9rem;
+    color: var(--dim-font);
+    padding: 0 25px; 
+    margin: 20px 0;
+}
+
+.description::before{
+    content: "\" ";
+}
+
+.description::after{
+    content: " \"";
+}
