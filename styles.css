@@ -25,6 +25,10 @@ body{
     background-size:cover ;
 }
 
+iframe{
+    display: none;
+}
+
 .heading-box{
     font-family: 'Dancing Script', cursive;
     grid-area: heading-box;
