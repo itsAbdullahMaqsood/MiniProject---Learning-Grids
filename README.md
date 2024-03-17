@@ -2,7 +2,7 @@
 
 ## 🔗 Check it Out
 
-###This project is live at : https://itsabdullahmaqsood.github.io/MiniProject-Grids/
+### This project is live at : https://itsabdullahmaqsood.github.io/MiniProject-Grids/
 
 ## 🎢 Overview
 
