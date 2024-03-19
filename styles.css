@@ -40,9 +40,11 @@ iframe{
     display: grid;
     margin: 1.5rem 0;
     width: max(70vw, 1100px );
-    height: max(75vh, 604px);
+    /* height: max(95vh, 604px); */
+    height: auto;
+
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr;
     grid-template-areas: 
         "heading-box heading-box heading-box heading-box "
         "box1 box1 box2 box3"
@@ -113,7 +115,7 @@ iframe{
 }
 
 .box2:hover{
-    box-shadow: 3px 5px 15px -1px rgb(4, 0, 58);; /* x, y, blur, spread */
+    box-shadow: 3px 5px 15px -1px rgb(4, 0, 58);; /* x, y, blur, spread, color */
 }
 
 .box3{
